@@ -50,7 +50,7 @@ export const message = (event: MessageEvent): Action => {
     type: responseType,
     payload: {
       timestamp: new Date(),
-      data: responseType === WEBSOCKET_MESSAGE ? event.data : data ,
+      data: data,
       event
     },
   }
